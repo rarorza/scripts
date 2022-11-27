@@ -8,8 +8,8 @@ packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin
 
 packages_flatpak=( bitwarden discord snes9x pcsx2 rpcs3 citra duckstation ryujinx yuzu )
 
-pacman -Syu
-pacman -S ${packages[@]}
+sudo pacman -Syu
+sudo pacman -S ${packages[@]}
 #pacman -S ${packages[@]} --noconfirm
 
 git clone https://aur.archlinux.org/yay.git
