@@ -2,9 +2,9 @@
 
 set -e
 
-packages=( awesome rofi picom alacritty xterm ranger htop git vim neovim vlc smplayer lutris steam wine winetricks xf86-input-wacom libwacom xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip flatpak gimp alsa-utils flameshot qbittorrent firefox piper)
+packages=( awesome rofi picom alacritty xterm ranger htop git vim neovim vlc smplayer lutris steam wine winetricks xf86-input-wacom libwacom xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre node yarn npm pip rust )
 
-packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin )
+packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git )
 
 packages_flatpak=( bitwarden discord snes9x pcsx2 rpcs3 citra duckstation ryujinx yuzu )
 
@@ -28,10 +28,15 @@ sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/ /home/rarorza/.conf
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /home/rarorza/.local/share/
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/picom/ /home/rarorza/.config/
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/ranger/ /home/rarorza/.config/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/zsh/.zshrc /home/rarorza/
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
 sudo cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 
 fc-cache -vf
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+cargo install exa bat
+chsh -s /usr/bin/zsh
 
 #continuar = https://plus.diolinux.com.br/t/tutorial-faca-seu-proprio-script-de-pos-instalacao/10021
