@@ -12,22 +12,26 @@ pacman -Syu
 pacman -S ${packages[@]}
 #pacman -S ${packages[@]} --noconfirm
 
+git clone https://aur.archlinux.org/yay.git
+cd yay/
+makepkg -si
+cd ..
+yay -S ${packages_yay[@]}
 
+flatpak install ${packages_flatpak[@]}
+#flatpak install ${packages_flatpak[@]} -y
 
 git clone https://github.com/rarorza/awesome/
-
 cp -r awesome/ /home/rarorza/.config/
 cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/ /home/rarorza/
 cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/ /home/rarorza/.config/
-cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ home/rarorza/.local/share/
+cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /home/rarorza/.local/share/
 cp -r /home/rarorza/.config/awesome/dotfiles/picom/ /home/rarorza/.config/
 cp -r /home/rarorza/.config/awesome/dotfiles/ranger/ /home/rarorza/.config/
 cp -r /home/rarorza/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
 cp -r /home/rarorza/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
 cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 
-fv-cache -vf
-
-rofi-theme-selector
+fc-cache -vf
 
 #continuar = https://plus.diolinux.com.br/t/tutorial-faca-seu-proprio-script-de-pos-instalacao/10021
