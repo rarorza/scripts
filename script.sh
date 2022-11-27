@@ -22,15 +22,15 @@ flatpak install ${packages_flatpak[@]}
 #flatpak install ${packages_flatpak[@]} -y
 
 git clone https://github.com/rarorza/awesome/
-cp -r awesome/ /home/rarorza/.config/
-cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/ /home/rarorza/
-cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/ /home/rarorza/.config/
-cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /home/rarorza/.local/share/
-cp -r /home/rarorza/.config/awesome/dotfiles/picom/ /home/rarorza/.config/
-cp -r /home/rarorza/.config/awesome/dotfiles/ranger/ /home/rarorza/.config/
-cp -r /home/rarorza/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
-cp -r /home/rarorza/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
-cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
+sudo cp -r awesome/ /home/rarorza/.config/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/ /home/rarorza/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/ /home/rarorza/.config/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /home/rarorza/.local/share/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/picom/ /home/rarorza/.config/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/ranger/ /home/rarorza/.config/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
+sudo cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 
 fc-cache -vf
 
