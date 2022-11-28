@@ -3,7 +3,7 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty xterm ranger htop vim neovim vlc smplayer lutris wine winetricks xf86-input-wacom libwacom xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol unrar acpid xournalpp )
+packages=( awesome rofi picom alacritty xterm ranger htop vim neovim vlc smplayer lutris wine winetricks xf86-input-wacom libwacom xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol unrar acpid xournalpp skanlite )
 
 # Pacman packages with specific options
 packages_options=( steam )
