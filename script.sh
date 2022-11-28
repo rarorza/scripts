@@ -43,5 +43,3 @@ sudo systemctl enable bluetooth.service
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cargo install exa bat
 chsh -s /usr/bin/zsh
-
-#continuar = https://plus.diolinux.com.br/t/tutorial-faca-seu-proprio-script-de-pos-instalacao/10021
