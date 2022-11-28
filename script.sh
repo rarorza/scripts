@@ -37,6 +37,9 @@ echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
 fc-cache -vf
 
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cargo install exa bat
 chsh -s /usr/bin/zsh
