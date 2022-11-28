@@ -31,7 +31,7 @@ sudo cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
 sudo cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
 sudo cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
 sudo cp -r /$HOME/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
-sudo cp -r /$HOME/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
+sudo cp -r /$HOME/.config/awesome/dotfiles/awesome/themes/Dark/ /usr/share/awesome/themes/
 sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
