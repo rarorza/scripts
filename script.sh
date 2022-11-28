@@ -23,16 +23,16 @@ yay -S ${packages_yay[@]} --noconfirm
 flatpak install ${packages_flatpak[@]} -y
 
 git clone https://github.com/rarorza/awesome/
-sudo cp -r awesome/ /home/rarorza/.config/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/ /home/rarorza/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/ /home/rarorza/.config/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /home/rarorza/.local/share/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/picom/ /home/rarorza/.config/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/ranger/ /home/rarorza/.config/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/zsh/.zshrc /home/rarorza/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
-sudo cp -r /home/rarorza/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
+sudo cp -r awesome/ /$HOME/.config/
+sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
+sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/ /$HOME/.config/
+sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
+sudo cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
+sudo cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
+sudo cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
+sudo cp -r /$HOME/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
+sudo cp -r /$HOME/.config/awesome/dotfiles/themes\ awesomewm/Dark/ /usr/share/awesome/themes/
+sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
 fc-cache -vf
