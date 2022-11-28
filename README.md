@@ -1,3 +1,3 @@
 # script
 
-Post install script for Arch Linux
+Post install script for Arch Linux.
