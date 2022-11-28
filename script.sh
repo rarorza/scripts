@@ -3,7 +3,7 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty xterm ranger htop vim neovim vlc smplayer lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol unrar acpid xournalpp skanlite )
+packages=( awesome rofi picom alacritty xterm ranger htop vim neovim vlc smplayer lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol lib32-pipewire unrar acpid xournalpp libreoffice-fresh )
 
 # Pacman packages with specific options
 packages_options=( steam )
@@ -33,12 +33,12 @@ flatpak install ${packages_flatpak[@]} -y
 
 # AwesomeWM and general config files
 git clone https://github.com/rarorza/awesome/
-sudo cp -r awesome/ /$HOME/.config/
-sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
-sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/ /$HOME/.config/
-sudo cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
-sudo cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
-sudo cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
+cp -r awesome/ /$HOME/.config/
+cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
+cp -r /$HOME/.config/awesome/dotfiles/alacritty/ /$HOME/.config/
+cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
+cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
+cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
 sudo cp -r /$HOME/.config/awesome/dotfiles/rofi/themes/android_notification.rasi /usr/share/rofi/themes/
 sudo cp -r /$HOME/.config/awesome/dotfiles/awesome/themes/Dark/ /usr/share/awesome/themes/
 sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
@@ -57,7 +57,7 @@ sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
 # Install fonts
-sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
+cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
 fc-cache -vf
 
 # Install addons for ZSH
