@@ -22,11 +22,11 @@ yay -S ${packages_yay[@]} --noconfirm
 
 flatpak install ${packages_flatpak[@]} -y
 
+# AwesomeWM and general config files
 git clone https://github.com/rarorza/awesome/
 sudo cp -r awesome/ /$HOME/.config/
 sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
 sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/ /$HOME/.config/
-sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
 sudo cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
 sudo cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
 sudo cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
@@ -35,11 +35,23 @@ sudo cp -r /$HOME/.config/awesome/dotfiles/awesome/themes/Dark/ /usr/share/aweso
 sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
+# Auto update/save DNS
+sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/resolv.conf.override /etc/
+sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/override.sh /etc/NetworkManager/dispatcher.d/
+sudo chown root:root /etc/NetworkManager/dispatcher.d/override.sh
+sudo chmod 755 /etc/NetworkManager/dispatcher.d/override.sh
+sudo systemctl enable NetworkManager-dispatcher.service
+sudo systemctl start NetworkManager-dispatcher.service
+
+# Start and enable bluetooth
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+
+# Install fonts
+sudo cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
 fc-cache -vf
 
-sudo systemctl start bluetooth.service
-sudo systemctl enable bluetooth.service
-
+# Install addons for ZSH
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cargo install exa bat
 chsh -s /usr/bin/zsh
