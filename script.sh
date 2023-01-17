@@ -3,7 +3,7 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty xterm ranger bashtop feh mupdf vim neovim vlc smplayer nvidia-settings lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol lib32-pipewire unrar acpid xournalpp libreoffice-fresh xorg-xkill ueberzug gamemode lib32-gamemode noto-fonts-emoji docker )
+packages=( awesome rofi picom alacritty xterm ranger bashtop feh mupdf vim neovim vlc smplayer nvidia-settings lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol lib32-pipewire unrar acpid xournalpp libreoffice-fresh xorg-xkill ueberzug gamemode lib32-gamemode noto-fonts-emoji docker docker-compose )
 
 # Pacman packages with specific options
 packages_options=( steam base-devel )
