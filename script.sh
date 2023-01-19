@@ -17,6 +17,9 @@ packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgamesl
 # Pip packages
 packages_pip=( black )
 
+# Npm packages
+packages_npm=( live-server prettier )
+
 # Install pacman packages
 sudo pacman -Syu
 sudo pacman -S ${packages[@]} --noconfirm
@@ -42,8 +45,7 @@ pip install ${packages_pip[@]}
 # Install npm packages
 mkdir Projects/
 cd Projects/
-sudo npm install -g live-server
-npm install --save-dev --save-exact prettier
+sudo npm install -g ${packages_npm[@]}
 cd ..
 
 # AwesomeWM and general config files
