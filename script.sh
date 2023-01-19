@@ -3,13 +3,13 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty xterm ranger bashtop feh mupdf vim neovim vlc smplayer nvidia-settings lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct neofetch nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak gimp alsa-utils flameshot qbittorrent firefox piper calibre nodejs yarn npm rust gnome-boxes gparted os-prober pavucontrol lib32-pipewire unrar acpid xournalpp libreoffice-fresh xorg-xkill ueberzug gamemode lib32-gamemode noto-fonts-emoji docker docker-compose python-pip kdenlive )
+packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak alsa-utils pavucontrol lib32-pipewire flameshot qbittorrent firefox piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip kdenlive gimp vlc smplayer )
 
 # Pacman packages with specific options
 packages_options=( steam base-devel )
 
 # AUR packages
-packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git appimagelauncher visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git )
+packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git )
 
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.gnome.Calculator org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu )
