@@ -14,6 +14,9 @@ packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.gnome.Calculator org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu )
 
+# Pip packages
+packages_pip=( black )
+
 # Install pacman packages
 sudo pacman -Syu
 sudo pacman -S ${packages[@]} --noconfirm
@@ -32,6 +35,9 @@ yay -S ${packages_yay[@]} --noconfirm
 
 # Install flatpak packages
 flatpak install ${packages_flatpak[@]} -y
+
+# Install pip packages
+pip install ${packages_pip[@]}
 
 # AwesomeWM and general config files
 git clone https://github.com/rarorza/awesome/
