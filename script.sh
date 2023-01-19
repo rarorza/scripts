@@ -40,8 +40,11 @@ flatpak install ${packages_flatpak[@]} -y
 pip install ${packages_pip[@]}
 
 # Install npm packages
+mkdir Projects/
+cd Projects/
 sudo npm install -g live-server
 npm install --save-dev --save-exact prettier
+cd ..
 
 # AwesomeWM and general config files
 git clone https://github.com/rarorza/awesome/
