@@ -43,8 +43,8 @@ flatpak install ${packages_flatpak[@]} -y
 pip install ${packages_pip[@]}
 
 # Install npm packages
-mkdir Projects/
-cd Projects/
+mkdir projects/
+cd projects/
 sudo npm install -g ${packages_npm[@]}
 cd ..
 
