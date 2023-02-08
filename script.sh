@@ -3,13 +3,13 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak alsa-utils pavucontrol lib32-pipewire flameshot qbittorrent firefox piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip kdenlive gimp vlc smplayer )
+packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak alsa-utils pavucontrol lib32-pipewire flameshot qbittorrent firefox piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip kdenlive gimp vlc smplayer breeze-gtk dolphin )
 
 # Pacman packages with specific options
 packages_options=( steam base-devel )
 
 # AUR packages
-packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git timeshift )
+packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ly )
 
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.gnome.Calculator org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu flatpak install flathub net.davidotek.pupgui2 )
@@ -43,8 +43,8 @@ flatpak install ${packages_flatpak[@]} -y
 pip install ${packages_pip[@]}
 
 # Install npm packages
-mkdir projects/
-cd projects/
+mkdir dev/
+cd dev/
 sudo npm install -g ${packages_npm[@]}
 cd ..
 
@@ -90,3 +90,7 @@ fc-cache -vf
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cargo install exa bat
 chsh -s /usr/bin/zsh
+
+# Enable ly
+sudo systemctl enable ly.service
+sudo systemctl start ly.service
