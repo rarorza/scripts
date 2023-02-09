@@ -90,7 +90,3 @@ fc-cache -vf
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cargo install exa bat
 chsh -s /usr/bin/zsh
-
-# Enable ly
-sudo systemctl enable ly.service
-sudo systemctl start ly.service
