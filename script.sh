@@ -37,7 +37,7 @@ yes | rm -r yay/
 yay -S ${packages_yay[@]} --noconfirm
 
 # Install flatpak packages
-flatpak install ${packages_flatpak[@]} -y
+flatpak install flathub ${packages_flatpak[@]} -y
 
 # Install pip packages
 pip install ${packages_pip[@]}
