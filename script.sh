@@ -15,10 +15,10 @@ packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.gnome.Calculator org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu net.davidotek.pupgui2 )
 
 # Pip packages
-packages_pip=( black )
+packages_pip=( black flake8 bandit isort )
 
 # Npm packages
-packages_npm=( live-server prettier )
+packages_npm=( live-server prettier pyright )
 
 # Install pacman packages
 sudo pacman -Syu
