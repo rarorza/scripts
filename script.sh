@@ -75,6 +75,11 @@ sudo systemctl start NetworkManager-dispatcher.service
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
+# Enable firewall
+sudo ufw default deny incoming
+sudo ufw enable
+sudo ufw reload
+
 # Enable docker
 sudo systemctl enable --now docker docker.socket containerd  
 
