@@ -49,7 +49,7 @@ sudo npm install -g ${packages_npm[@]}
 cd ..
 
 # AwesomeWM and general config files
-git clone https://github.com/rarorza/awesome/
+git clone git@github.com:rarorza/awesome.git
 cp -r awesome/ /$HOME/.config/
 yes | rm -r awesome/
 cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
