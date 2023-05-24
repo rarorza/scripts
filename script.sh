@@ -3,10 +3,10 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint transmission-qt adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark kcalc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos lazarus )
+packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite flatpak alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint transmission-qt adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark mate-calc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos lazarus )
 
 # Pacman packages with specific options
-packages_options=( steam base-devel dolphin )
+packages_options=( steam base-devel thunar )
 
 # AUR packages
 packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-win10-auto minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git vkbasalt )
