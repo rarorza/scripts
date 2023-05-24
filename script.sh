@@ -49,7 +49,7 @@ sudo npm install -g ${packages_npm[@]}
 cd ..
 
 # AwesomeWM and general config files
-git clone git@github.com:rarorza/awesome.git
+git clone https://github.com/rarorza/awesome.git
 cp -r awesome/ /$HOME/.config/
 yes | rm -r awesome/
 cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
@@ -84,6 +84,10 @@ sudo ufw reload
 sudo systemctl enable --now docker docker.socket containerd  
 
 # Install Vim Plug
+git clone https://github.com/rarorza/nvim.git
+cp -r nvim/ /$HOME/.config/
+yes | rm -r nvim/
+
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config/}"/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
