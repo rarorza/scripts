@@ -9,7 +9,7 @@ packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch f
 packages_options=( steam base-devel dolphin flatpak )
 
 # AUR packages
-packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-win10-auto minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git vkbasalt )
+packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin zsh ttf-meslo-nerd-font-powerlevel10k powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-win10-auto minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git )
 
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu net.davidotek.pupgui2 org.telegram.desktop com.github.libresprite.LibreSprite )
