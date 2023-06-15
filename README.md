@@ -4,4 +4,4 @@ Post install script for Arch Linux.
 
 Dependencies:
 
-SSH Access to rarorza/awesome and rarorza/nvim repositories.
+SSH access to rarorza/awesome and rarorza/nvim repositories.
