@@ -92,7 +92,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config/}"/nvim/autoload/plug.vim --cre
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install fonts
-cp -r /$HOME/.config/awesome/dotfiles/alacritty/.local/share/fonts/ /$HOME/.local/share/
 fc-cache -vf
 
 # Install addons for ZSH
