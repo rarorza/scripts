@@ -3,7 +3,7 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty ueberzug xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint qbittorrent adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark kcalc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos lazarus pycharm-community-edition ttf-fira-code ttf-hack-nerd ttf-meslo-nerd gnome-keyring )
+packages=( awesome rofi picom alacritty kitty xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted os-prober unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint qbittorrent adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark kcalc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos lazarus pycharm-community-edition ttf-fira-code ttf-hack-nerd ttf-meslo-nerd gnome-keyring )
 
 # Pacman packages with specific options
 packages_options=( steam base-devel dolphin flatpak )
@@ -54,6 +54,7 @@ cp -r awesome/ /$HOME/.config/
 yes | rm -r awesome/
 cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
 cp -r /$HOME/.config/awesome/dotfiles/alacritty/ /$HOME/.config/
+cp -r /$HOME/.config/awesome/dotfiles/kitty/ /$HOME/.config/
 cp -r /$HOME/.config/awesome/dotfiles/picom/ /$HOME/.config/
 cp -r /$HOME/.config/awesome/dotfiles/ranger/ /$HOME/.config/
 cp -r /$HOME/.config/awesome/dotfiles/zsh/.zshrc /$HOME/
@@ -84,7 +85,6 @@ sudo ufw reload
 sudo systemctl enable --now docker docker.socket containerd  
 
 # Install Vim Plug
-git clone git@github.com:rarorza/nvim.git
 cp -r nvim/ /$HOME/.config/
 yes | rm -r nvim/
 
