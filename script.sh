@@ -80,6 +80,8 @@ sudo systemctl start bluetooth.service
 sudo ufw default deny incoming
 sudo ufw enable
 sudo ufw reload
+sudo systemctl start ufw.service
+sudo systemctl enable ufw.service 
 
 # Enable docker
 sudo systemctl enable --now docker docker.socket containerd  
