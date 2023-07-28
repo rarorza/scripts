@@ -73,8 +73,8 @@ sudo systemctl enable NetworkManager-dispatcher.service
 sudo systemctl start NetworkManager-dispatcher.service
 
 # Start and enable bluetooth
-sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
 
 # Enable firewall
 sudo ufw default deny incoming
