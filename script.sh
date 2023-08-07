@@ -14,9 +14,6 @@ packages_yay=( google-chrome winff qt5-styleplugins grub-customizer hplip-plugin
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.heroicgameslauncher.hgl com.obsproject.Studio com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.fedoraproject.MediaWriter org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu sh.ppy.osu net.davidotek.pupgui2 org.telegram.desktop com.github.libresprite.LibreSprite it.mijorus.gearlever )
 
-# Pip packages
-packages_pip=( black flake8 bandit isort )
-
 # Npm packages
 packages_npm=( live-server prettier pyright )
 
@@ -39,9 +36,6 @@ yay -S ${packages_yay[@]} --noconfirm
 # Install flatpak packages
 flatpak install flathub ${packages_flatpak[@]} -y
 
-# Install pip packages
-pip install ${packages_pip[@]}
-
 # Install npm packages
 mkdir dev/
 cd dev/
@@ -49,7 +43,7 @@ sudo npm install -g ${packages_npm[@]}
 cd ..
 
 # AwesomeWM and general config files
-git clone git@github.com:rarorza/awesome.git
+git clone https://github.com/rarorza/awesome.git
 cp -r awesome/ /$HOME/.config/
 yes | rm -r awesome/
 cp -r /$HOME/.config/awesome/dotfiles/.scripts/ /$HOME/
@@ -87,7 +81,7 @@ sudo systemctl enable ufw.service
 sudo systemctl enable --now docker docker.socket containerd  
 
 # Install Vim Plug
-git clone git@github.com:rarorza/nvim.git
+git clone https://github.com/rarorza/nvim.git
 cp -r nvim/ /$HOME/.config/
 yes | rm -r nvim/
 
