@@ -81,12 +81,11 @@ sudo systemctl enable ufw.service
 sudo systemctl enable --now docker docker.socket containerd  
 
 # Install Vim Plug
-git clone https://github.com/rarorza/nvim.git
-cp -r nvim/ /$HOME/.config/
-yes | rm -r nvim/
-
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config/}"/nvim/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# git clone https://github.com/rarorza/nvim.git
+# cp -r nvim/ /$HOME/.config/
+# yes | rm -r nvim/
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config/}"/nvim/autoload/plug.vim --create-dirs \
+#        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install fonts
 fc-cache -vf
