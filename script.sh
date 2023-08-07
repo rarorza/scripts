@@ -87,6 +87,7 @@ sudo systemctl enable ufw.service
 sudo systemctl enable --now docker docker.socket containerd  
 
 # Install Vim Plug
+git clone git@github.com:rarorza/nvim.git
 cp -r nvim/ /$HOME/.config/
 yes | rm -r nvim/
 
