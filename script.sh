@@ -60,11 +60,11 @@ echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
 # Auto update/save DNS
 sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/resolv.conf.override /etc/
-sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/override.sh /etc/NetworkManager/dispatcher.d/
-sudo chown root:root /etc/NetworkManager/dispatcher.d/override.sh
-sudo chmod 755 /etc/NetworkManager/dispatcher.d/override.sh
-sudo systemctl start NetworkManager-dispatcher.service
+sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/zoverride.sh /etc/NetworkManager/dispatcher.d/
+sudo chown root:root /etc/NetworkManager/dispatcher.d/zoverride.sh
+sudo chmod 755 /etc/NetworkManager/dispatcher.d/zoverride.sh
 sudo systemctl enable NetworkManager-dispatcher.service
+sudo systemctl start NetworkManager-dispatcher.service
 
 # Start and enable bluetooth
 sudo systemctl start bluetooth.service
