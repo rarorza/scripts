@@ -9,7 +9,7 @@ packages=( awesome rofi picom alacritty kitty xterm ranger bashtop neofetch feh 
 packages_options=( steam nvidia base-devel dolphin flatpak )
 
 # AUR packages
-packages_yay=( google-chrome winff qt5-styleplugins hplip-plugin zsh powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-win10-auto minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git bashmount ventoy-bin zsh-syntax-highlighting-git heroic-games-launcher-bin )
+packages_yay=( google-chrome winff qt5-styleplugins hplip-plugin zsh powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-win10-auto minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git vkbasalt bashmount ventoy-bin zsh-syntax-highlighting-git heroic-games-launcher-bin )
 
 # Flatpak packages
 packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu net.davidotek.pupgui2 org.telegram.desktop it.mijorus.gearlever )
