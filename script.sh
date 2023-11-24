@@ -3,7 +3,7 @@
 set -e
 
 # Pacman packages
-packages=( awesome rofi picom alacritty kitty xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint qbittorrent adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark kcalc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos pycharm-community-edition ttf-fira-code ttf-hack-nerd ttf-meslo-nerd gnome-keyring sqlitebrowser go leafpad linux-headers xclip dotnet-runtime dotnet-sdk aspnet-runtime dbeaver obs-studio )
+packages=( awesome rofi picom alacritty kitty xterm ranger bashtop neofetch feh mupdf vim neovim nvidia-settings gamemode lib32-gamemode lutris wine winetricks xf86-input-wacom libwacom kcm-wacomtablet xorg-xinput lxappearance qt5ct nitrogen polkit-gnome ntfs-3g fuse bluez bluez-utils hplip skanlite alsa-utils pavucontrol lib32-pipewire flameshot firefox chromium piper calibre gnome-boxes gparted unrar acpid xournalpp libreoffice-fresh xorg-xkill noto-fonts-emoji nodejs yarn npm rust docker docker-compose python-pip gimp vlc smplayer breeze-gtk gufw kolourpaint qbittorrent adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-han-sans-cn-fonts ark kcalc jdk-openjdk kdialog tor torbrowser-launcher nyx vulkan-tools mesa-demos pycharm-community-edition ttf-fira-code ttf-hack-nerd ttf-meslo-nerd gnome-keyring sqlitebrowser go leafpad linux-headers xclip dotnet-runtime dotnet-sdk aspnet-runtime dbeaver obs-studio telegram-desktop )
 
 # Pacman packages with specific options
 packages_options=( steam nvidia base-devel dolphin flatpak )
@@ -12,7 +12,7 @@ packages_options=( steam nvidia base-devel dolphin flatpak )
 packages_yay=( google-chrome winff qt5-styleplugins hplip-plugin zsh powerline-fonts awesome-terminal-fonts zsh-theme-powerlevel10k-git visual-studio-code-bin rofi-power-menu asdf-vm upscayl-bin clang-format-all-git ttf-ms-fonts minecraft-launcher selectdefaultapplication-git mangohud-git lib32-mangohud-git goverlay-git vkbasalt bashmount ventoy-bin zsh-syntax-highlighting-git heroic-games-launcher-bin )
 
 # Flatpak packages
-packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu net.davidotek.pupgui2 org.telegram.desktop it.mijorus.gearlever )
+packages_flatpak=( com.bitwarden.desktop com.discordapp.Discord com.snes9x.Snes9x io.mgba.mGBA net.pcsx2.PCSX2 net.rpcs3.RPCS3 org.DolphinEmu.dolphin-emu org.citra_emu.citra org.duckstation.DuckStation org.ppsspp.PPSSPP org.ryujinx.Ryujinx org.yuzu_emu.yuzu net.davidotek.pupgui2 it.mijorus.gearlever )
 
 # Npm packages
 packages_npm=( live-server prettier pyright )
