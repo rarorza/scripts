@@ -204,6 +204,17 @@ sudo cp -r /$HOME/.config/awesome/dotfiles/awesome/themes/Dark/ /usr/share/aweso
 #sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
+# Instalar Oh-my-zsh! -> https://ohmyz.sh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Instalar Zsh Autosuggestions
+# https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Instalar Zsh Syntax Highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Auto update/save DNS
 sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/resolv.conf.override /etc/
 sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/zoverride.sh /etc/NetworkManager/dispatcher.d/
