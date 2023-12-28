@@ -115,7 +115,6 @@ packages_yay=(
     zsh 
     powerline-fonts 
     awesome-terminal-fonts 
-    zsh-theme-powerlevel10k-git 
     visual-studio-code-bin 
     rofi-power-menu 
     asdf-vm 
@@ -130,7 +129,6 @@ packages_yay=(
     vkbasalt 
     bashmount 
     ventoy-bin 
-    zsh-syntax-highlighting-git 
     heroic-games-launcher-bin 
     )
 
