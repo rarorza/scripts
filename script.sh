@@ -95,6 +95,7 @@ packages=(
     dbeaver 
     obs-studio 
     telegram-desktop 
+    gnome-themes-extra # to apply dark theme in legacy apps
     )
 
 # Pacman packages with specific options
