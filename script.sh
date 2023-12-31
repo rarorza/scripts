@@ -203,16 +203,18 @@ sudo cp -r /$HOME/.config/awesome/dotfiles/awesome/themes/Dark/ /usr/share/aweso
 #sudo cp -r /$HOME/.config/awesome/dotfiles/.scripts/rofi-power-menu/rofi-power-menu /usr/bin/
 echo 'export QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment
 
-# Instalar Oh-my-zsh! -> https://ohmyz.sh/
+# Oh-my-zsh! -> https://ohmyz.sh/
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Instalar Zsh Autosuggestions
+# Zsh Autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# Instalar Zsh Syntax Highlighting
+# Zsh Syntax Highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Starship - > # https://starship.rs/guide/#%F0%9F%9A%80-installation
 
 # Auto update/save DNS
 sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/resolv.conf.override /etc/
@@ -235,13 +237,6 @@ sudo systemctl enable ufw.service
 
 # Enable docker
 sudo systemctl enable --now docker docker.socket containerd  
-
-# Install Vim Plug
-# git clone https://github.com/rarorza/nvim.git
-# cp -r nvim/ /$HOME/.config/
-# yes | rm -r nvim/
-# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config/}"/nvim/autoload/plug.vim --create-dirs \
-#        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Install fonts
 fc-cache -vf
