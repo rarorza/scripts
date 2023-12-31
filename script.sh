@@ -214,7 +214,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # https://github.com/zsh-users/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# Starship - > https://starship.rs/guide/#%F0%9F%9A%80-installation
+# Starship - > https://starship.rs/
 
 # Auto update/save DNS
 sudo cp -r /$HOME/.config/awesome/dotfiles/resolv/resolv.conf.override /etc/
@@ -242,6 +242,4 @@ sudo systemctl enable --now docker docker.socket containerd
 fc-cache -vf
 
 # Install addons for ZSH
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-cargo install exa bat
 chsh -s /usr/bin/zsh
