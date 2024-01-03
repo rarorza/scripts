@@ -35,6 +35,8 @@ packages=(
     fuse 
     bluez 
     bluez-utils 
+    bluez-tools
+    blueman 
     hplip 
     skanlite 
     alsa-utils 
