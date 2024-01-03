@@ -229,6 +229,7 @@ sudo systemctl start NetworkManager-dispatcher.service
 # Start and enable bluetooth
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
+# Uncomment AutoEnable=true /etc/bluetooth/main.conf
 
 # Enable firewall
 sudo ufw default deny incoming
