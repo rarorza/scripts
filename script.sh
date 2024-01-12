@@ -71,7 +71,8 @@ packages=(
     adobe-source-han-sans-jp-fonts 
     adobe-source-han-sans-kr-fonts 
     adobe-source-han-sans-cn-fonts 
-    ark 
+    ark # qt
+    file-roller # gtk
     kcalc 
     jdk-openjdk 
     kdialog 
