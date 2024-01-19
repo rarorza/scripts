@@ -98,6 +98,7 @@ packages=(
     obs-studio 
     telegram-desktop 
     gnome-themes-extra # to apply dark theme in legacy apps
+    xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
     )
 
 # Pacman packages with specific options
