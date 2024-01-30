@@ -57,6 +57,7 @@ packages=(
     nodejs 
     yarn 
     npm 
+    pnpm
     rust 
     docker 
     docker-compose 
