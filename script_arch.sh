@@ -72,6 +72,7 @@ packages=(
     adobe-source-han-sans-jp-fonts 
     adobe-source-han-sans-kr-fonts 
     adobe-source-han-sans-cn-fonts 
+    noto-fonts-emoji
     ark # qt
     file-roller # gtk
     kcalc 
