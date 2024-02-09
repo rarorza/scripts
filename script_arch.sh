@@ -63,6 +63,7 @@ packages=(
     python-pip 
     gimp 
     vlc 
+    okular # pdf reader
     smplayer 
     breeze-gtk 
     gufw 
