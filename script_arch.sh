@@ -53,7 +53,6 @@ packages=(
     xournalpp 
     libreoffice-fresh 
     xorg-xkill 
-    noto-fonts-emoji 
     nodejs 
     yarn 
     npm 
