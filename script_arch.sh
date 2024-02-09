@@ -86,6 +86,7 @@ packages=(
     ttf-fira-code 
     ttf-hack-nerd 
     ttf-meslo-nerd 
+    ttf-jetbrains-mono-nerd 
     gnome-keyring 
     sqlitebrowser 
     go 
