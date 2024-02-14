@@ -245,6 +245,7 @@ sudo systemctl enable ufw.service
 
 # Enable docker
 sudo systemctl enable --now docker docker.socket containerd  
+sudo usermod -aG docker $USER
 
 # Install fonts
 fc-cache -vf
