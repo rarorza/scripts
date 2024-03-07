@@ -36,6 +36,7 @@ packages=(
     polkit-gnome 
     ntfs-3g 
     fuse 
+    blueman 
     bluez 
     bluez-utils 
     bluez-tools
