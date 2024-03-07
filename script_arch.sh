@@ -31,6 +31,7 @@ packages=(
     xorg-xinput 
     lxappearance 
     qt5ct 
+    qt5-styleplugins # yay
     nitrogen 
     polkit-gnome 
     ntfs-3g 
@@ -76,6 +77,7 @@ packages=(
     adobe-source-han-sans-cn-fonts 
     noto-fonts-emoji
     ark # qt
+    peazip-qt-bin # ark alternative yay
     file-roller # gtk
     kcalc 
     jdk-openjdk 
