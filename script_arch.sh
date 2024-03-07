@@ -15,6 +15,7 @@ packages=(
     neofetch 
     feh 
     mupdf 
+    transh-cli 
     vim 
     neovim 
     nvidia-settings 
