@@ -11,7 +11,8 @@ packages=(
     kitty 
     xterm 
     ranger 
-    pcmanfm 
+    pcmanfm # file manager
+    gvfs # file manager depencencia
     bashmount 
     htop 
     neofetch 
