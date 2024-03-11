@@ -11,6 +11,7 @@ packages=(
     kitty 
     xterm 
     ranger 
+    pcmanfm 
     bashmount 
     htop 
     neofetch 
