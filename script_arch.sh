@@ -110,6 +110,9 @@ packages=(
     telegram-desktop 
     gnome-themes-extra # to apply dark theme in legacy apps
     xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
+    goverlay
+    mangohud
+    lib32-mangohud
     )
 
 # Pacman packages with specific options
@@ -138,9 +141,6 @@ packages_yay=(
     ttf-ms-fonts 
     minecraft-launcher 
     selectdefaultapplication-git 
-    mangohud-git 
-    lib32-mangohud-git 
-    goverlay-git 
     vkbasalt 
     bashmount 
     ventoy-bin 
