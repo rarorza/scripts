@@ -32,8 +32,10 @@ packages=(
     kcm-wacomtablet 
     xorg-xinput 
     lxappearance 
-    qt5ct 
-    qt5-styleplugins # yay
+    qt5ct # qt5 version
+    qt5-styleplugins # qt5 version
+    qt6ct # qt6 version
+    qt6gtk2  # qt6 version
     nitrogen 
     polkit-gnome 
     ntfs-3g 
