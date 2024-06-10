@@ -4,6 +4,7 @@ set -e
 
 # Pacman packages
 packages=( 
+    fd
     awesome 
     rofi 
     picom 
