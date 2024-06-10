@@ -17,6 +17,9 @@ packages=(
     xz 
     tk
     #
+    # kde google drive
+    kio-gdrive 
+    #
     awesome 
     rofi 
     picom 
