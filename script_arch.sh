@@ -4,7 +4,13 @@ set -e
 
 # Pacman packages
 packages=( 
+    # nvim 
     fd
+    ripgrep
+    lazygit
+    gdu
+    bottom
+    #
     awesome 
     rofi 
     picom 
@@ -13,7 +19,7 @@ packages=(
     xterm 
     ranger 
     pcmanfm # file manager
-    gvfs # file manager depencencia
+    gvfs # file manager
     bashmount 
     htop 
     neofetch 
@@ -173,6 +179,10 @@ packages_npm=(
     live-server 
     prettier 
     pyright 
+    )
+
+packages_cargo=( 
+    tree-sitter-cli
     )
 
 # Install pacman packages
