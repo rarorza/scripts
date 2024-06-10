@@ -10,6 +10,12 @@ packages=(
     lazygit
     gdu
     bottom
+    # asdf
+    base-devel 
+    openssl 
+    zlib 
+    xz 
+    tk
     #
     awesome 
     rofi 
