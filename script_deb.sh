@@ -24,3 +24,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "['<Alt>9']
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Alt><Shift>9']" &
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Alt>0']" &
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Alt><Shift>0']"
+
+# nvim
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
