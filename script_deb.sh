@@ -37,3 +37,14 @@ mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
+
+# asdf + astronvim
+
+fd-find
+ripgrep
+gdu
+openssl
+tk
+xz-utils
+https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
+https://github.com/ClementTsang/bottom?tab=readme-ov-file#debian--ubuntu
