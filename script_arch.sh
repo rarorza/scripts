@@ -131,14 +131,12 @@ packages=(
     goverlay
     mangohud
     lib32-mangohud
-    )
-
-# Pacman packages with specific options
-packages_options=( 
+    dolphin
+    ffmpegthumbs # kde thumbnail in video archive
+    ffmpegthumbnailer
     steam 
     nvidia 
     base-devel 
-    dolphin 
     flatpak 
     )
 
