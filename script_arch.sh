@@ -20,6 +20,12 @@ packages=(
     # kde google drive
     kio-gdrive 
     #
+    egl-wayland
+    hyprpaper
+    waybar
+    tofi # yay
+    nwg-look # lx substitute
+    #
     awesome 
     rofi 
     picom 
