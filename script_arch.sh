@@ -164,7 +164,7 @@ packages_yay=(
     ttf-ms-fonts 
     minecraft-launcher 
     selectdefaultapplication-git 
-    vkbasalt 
+    vkbasalt # https://github.com/crosire/reshade-shaders
     bashmount 
     ventoy-bin 
     heroic-games-launcher-bin 
