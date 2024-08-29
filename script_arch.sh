@@ -39,6 +39,7 @@ packages=(
     htop 
     neofetch 
     feh 
+    gwenview
     mupdf 
     transh-cli 
     vim 
