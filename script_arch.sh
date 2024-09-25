@@ -145,6 +145,7 @@ packages=(
     nvidia 
     base-devel 
     flatpak 
+    zsh 
     )
 
 # AUR packages
@@ -153,7 +154,6 @@ packages_yay=(
     winff 
     qt5-styleplugins 
     hplip-plugin 
-    zsh 
     powerline-fonts 
     awesome-terminal-fonts 
     visual-studio-code-bin 
