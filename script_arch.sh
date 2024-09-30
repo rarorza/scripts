@@ -41,6 +41,7 @@ packages=(
     feh 
     gwenview
     mupdf 
+    xreader # xfce
     transh-cli 
     vim 
     neovim 
