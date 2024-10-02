@@ -147,6 +147,7 @@ packages=(
     base-devel 
     flatpak 
     zsh 
+    lightdm-gtk-greeter-settings
     )
 
 # AUR packages
