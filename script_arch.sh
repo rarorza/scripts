@@ -148,6 +148,7 @@ packages=(
     flatpak 
     zsh 
     lightdm-gtk-greeter-settings
+    yt-dlp # download videos youtube
     )
 
 # AUR packages
