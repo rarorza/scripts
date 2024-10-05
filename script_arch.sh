@@ -17,7 +17,6 @@ packages=(
     xz 
     tk
     #
-    # kde google drive
     kio-gdrive 
     #
     egl-wayland
