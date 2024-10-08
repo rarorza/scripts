@@ -82,7 +82,7 @@ packages=(
     unrar 
     acpid 
     xournalpp 
-    libreoffice-fresh 
+    libreoffice-still 
     xorg-xkill 
     nodejs 
     yarn 
