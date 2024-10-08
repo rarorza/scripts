@@ -3,6 +3,9 @@
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+# android
+sudo apt install scrcpy
+
 # increase shortcuts to change workspace in gnome shell
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']" &
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Alt><Shift>1']" &
