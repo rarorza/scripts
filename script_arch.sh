@@ -11,7 +11,6 @@ packages=(
     gdu
     bottom
     # asdf
-    base-devel 
     openssl 
     zlib 
     xz 
