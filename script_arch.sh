@@ -173,20 +173,30 @@ packages_yay=(
 
 # Flatpak packages
 packages_flatpak=( 
-    com.bitwarden.desktop 
     com.discordapp.Discord 
-    com.snes9x.Snes9x 
-    io.mgba.mGBA 
-    net.pcsx2.PCSX2 
-    net.rpcs3.RPCS3 
-    org.DolphinEmu.dolphin-emu 
-    org.citra_emu.citra 
+    org.telegram.desktop
     org.duckstation.DuckStation 
+    net.pcsx2.PCSX2 
     org.ppsspp.PPSSPP 
+    org.citra_emu.citra 
     org.ryujinx.Ryujinx 
     org.yuzu_emu.yuzu 
+    info.cemu.Cemu
+    org.libretro.RetroArch
+    com.heroicgameslauncher.hgl
+    net.lutris.Lutris 
+    com.obsproject.Studio
     net.davidotek.pupgui2 
+    com.rustdesk.RustDesk
     it.mijorus.gearlever 
+    io.dbeaver.DBeaverCommunity
+    md.obsidian.Obsidian
+    net.ankiweb.Anki
+    org.libreoffice.LibreOffice
+    org.mozilla.firefox
+    org.qbittorrent.qBittorrent
+    org.upscayl.Upscayl
+    org.gimp.GIMP
     )
 
 # Npm packages
