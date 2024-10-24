@@ -119,7 +119,6 @@ packages=(
     ttf-hack-nerd 
     ttf-meslo-nerd 
     ttf-jetbrains-mono-nerd 
-    ttf-jetbrains-mono
     gnome-keyring 
     sqlitebrowser 
     go 
