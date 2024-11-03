@@ -173,6 +173,7 @@ packages_yay=(
 # Flatpak packages
 packages_flatpak=( 
     com.discordapp.Discord 
+    com.github.tchx84.Flatseal
     org.telegram.desktop
     org.duckstation.DuckStation 
     net.pcsx2.PCSX2 
@@ -181,11 +182,14 @@ packages_flatpak=(
     org.ryujinx.Ryujinx 
     org.yuzu_emu.yuzu 
     info.cemu.Cemu
+    io.github.xyproto.zsnes
     org.libretro.RetroArch
+    org.prismlauncher.PrismLauncher
     com.heroicgameslauncher.hgl
     net.lutris.Lutris 
     com.obsproject.Studio
     net.davidotek.pupgui2 
+    com.github.Matoking.protontricks
     com.rustdesk.RustDesk
     it.mijorus.gearlever 
     io.dbeaver.DBeaverCommunity
@@ -196,6 +200,16 @@ packages_flatpak=(
     org.qbittorrent.qBittorrent
     org.upscayl.Upscayl
     org.gimp.GIMP
+    com.github.xournalpp.xournalpp
+    com.unity.UnityHub 
+    io.github.tntwise.REAL-Video-Enhancer
+    org.kde.kdenlive  
+    org.kde.krita 
+    org.libreoffice.LibreOffice  
+    # XFCE
+    org.gnome.Calculator 
+    org.gnome.Evince  
+    org.gnome.SimpleScan   
     )
 
 # Npm packages
