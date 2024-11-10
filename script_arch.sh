@@ -23,6 +23,7 @@ packages=(
     waybar
     tofi # yay
     nwg-look # lx substitute
+    wl-clipboard
     #
     awesome 
     rofi 
