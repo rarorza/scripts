@@ -172,7 +172,8 @@ packages_yay=(
     )
 
 # Flatpak packages
-packages_flatpak=( 
+packages_flatpak=(
+    com.bitwarden.desktop 
     com.discordapp.Discord 
     com.github.tchx84.Flatseal
     org.telegram.desktop
@@ -196,7 +197,6 @@ packages_flatpak=(
     io.dbeaver.DBeaverCommunity
     md.obsidian.Obsidian
     net.ankiweb.Anki
-    org.libreoffice.LibreOffice
     org.mozilla.firefox
     org.qbittorrent.qBittorrent
     org.upscayl.Upscayl
@@ -210,7 +210,11 @@ packages_flatpak=(
     # XFCE
     org.gnome.Calculator 
     org.gnome.Evince  
-    org.gnome.SimpleScan   
+    org.gnome.SimpleScan
+    # KDE
+    org.kde.kcalc
+    org.kde.gwenview
+    org.kde.okular
     )
 
 # Npm packages
