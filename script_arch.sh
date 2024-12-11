@@ -215,6 +215,7 @@ packages_flatpak=(
     io.github.tntwise.REAL-Video-Enhancer
     # ======== Dev ======== #
     io.dbeaver.DBeaverCommunity
+    rest.insomnia.Insomnia
     io.podman_desktop.PodmanDesktop
     com.unity.UnityHub
     # ======== Study ======== #
