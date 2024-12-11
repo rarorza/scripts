@@ -173,10 +173,17 @@ packages_yay=(
 
 # Flatpak packages
 packages_flatpak=(
+    # Tools
     com.bitwarden.desktop
-    com.discordapp.Discord
+    org.mozilla.firefox
     com.github.tchx84.Flatseal
+    it.mijorus.gearlever
+    com.discordapp.Discord
     org.telegram.desktop
+    org.qbittorrent.qBittorrent
+    org.libreoffice.LibreOffice
+    com.rustdesk.RustDesk
+    # Games
     org.duckstation.DuckStation
     net.pcsx2.PCSX2
     org.ppsspp.PPSSPP
@@ -189,26 +196,24 @@ packages_flatpak=(
     org.prismlauncher.PrismLauncher
     com.heroicgameslauncher.hgl
     net.lutris.Lutris
-    com.obsproject.Studio
     net.davidotek.pupgui2
     com.github.Matoking.protontricks
-    com.rustdesk.RustDesk
-    it.mijorus.gearlever
+    # Art
+    com.obsproject.Studio
+    org.kde.kdenlive
+    org.gimp.GIMP
+    org.kde.krita
+    org.upscayl.Upscayl
+    io.github.tntwise.REAL-Video-Enhancer
+    # Dev
     io.dbeaver.DBeaverCommunity
+    io.podman_desktop.PodmanDesktop
+    com.unity.UnityHub
+    # Study
     md.obsidian.Obsidian
     net.ankiweb.Anki
-    org.mozilla.firefox
-    org.qbittorrent.qBittorrent
-    org.upscayl.Upscayl
-    org.gimp.GIMP
     com.github.xournalpp.xournalpp
-    com.unity.UnityHub
-    io.github.tntwise.REAL-Video-Enhancer
-    org.kde.kdenlive
-    org.kde.krita
-    org.libreoffice.LibreOffice
-    io.podman_desktop.PodmanDesktop
-    # XFCE
+    # XFCE / GNOME
     org.gnome.Calculator 
     org.gnome.Evince  
     org.gnome.SimpleScan
@@ -219,21 +224,14 @@ packages_flatpak=(
     org.kde.skanpage 
     )
 
-# Npm packages
-packages_npm=( 
-    live-server 
-    prettier 
-    pyright 
-    )
-
 packages_cargo=( 
     tree-sitter-cli
     )
 
 # Install pacman packages
 sudo pacman -Syu
-sudo pacman -S ${packages[@]} --noconfirm
-sudo pacman -S ${packages_options[@]}
+sudo pacman -S ${packages[@]}
+#sudo pacman -S ${packages[@]} --noconfirm
 
 # Install YAY
 cd ..
@@ -249,12 +247,6 @@ yay -S ${packages_yay[@]}
 
 # Install flatpak packages
 flatpak install flathub ${packages_flatpak[@]} -y
-
-# Install npm packages
-mkdir dev/
-cd dev/
-sudo npm install -g ${packages_npm[@]}
-cd ..
 
 # AwesomeWM and general config files
 git clone https://github.com/rarorza/window_manager.git
