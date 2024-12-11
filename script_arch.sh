@@ -211,6 +211,7 @@ packages_flatpak=(
     org.kde.kdenlive
     org.gimp.GIMP
     org.kde.krita
+    org.inkscape.Inkscape
     org.upscayl.Upscayl
     io.github.tntwise.REAL-Video-Enhancer
     # ======== Dev ======== #
