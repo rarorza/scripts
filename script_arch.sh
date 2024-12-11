@@ -4,7 +4,7 @@ set -e
 
 # Pacman packages
 packages=( 
-    # nvim 
+    # astronvim 
     fd
     ripgrep
     lazygit
