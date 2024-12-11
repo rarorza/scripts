@@ -4,63 +4,6 @@ set -e
 
 # Pacman packages
 packages=( 
-    # astronvim 
-    fd
-    ripgrep
-    lazygit
-    gdu
-    bottom
-    # asdf
-    openssl 
-    zlib 
-    xz 
-    tk
-    # Hyprland
-    egl-wayland
-    hyprpaper
-    waybar
-    nwg-look # lx substitute
-    wl-clipboard
-    # TWM
-    awesome 
-    lxappearance 
-    qt5ct
-    qt6ct
-    nitrogen 
-    rofi 
-    xterm 
-    picom 
-    ranger 
-    pcmanfm # file manager
-    gvfs # dependence file manager
-    bashmount 
-    htop 
-    neofetch 
-    feh 
-    mupdf 
-    peazip-qt-bin # ark alternative yay
-    file-roller # gtk
-    transh-cli 
-    # System / Hardware
-    xf86-input-wacom 
-    libwacom 
-    kcm-wacomtablet 
-    xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
-    xorg-xinput 
-    xorg-xkill 
-    blueman 
-    bluez 
-    bluez-utils 
-    bluez-tools
-    alsa-utils 
-    pavucontrol 
-    lib32-pipewire 
-    ntfs-3g 
-    hplip 
-    acpid 
-    linux-headers 
-    flatpak 
-    gufw 
     # Tools
     firefox 
     chromium 
@@ -84,6 +27,26 @@ packages=(
     yt-dlp # download videos youtube
     kolourpaint 
     nyx 
+    # System / Hardware
+    xf86-input-wacom 
+    libwacom 
+    kcm-wacomtablet 
+    xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
+    xorg-xinput 
+    xorg-xkill 
+    blueman 
+    bluez 
+    bluez-utils 
+    bluez-tools
+    alsa-utils 
+    pavucontrol 
+    lib32-pipewire 
+    ntfs-3g 
+    hplip 
+    acpid 
+    linux-headers 
+    flatpak 
+    gufw 
     # Games
     nvidia 
     nvidia-settings 
@@ -123,6 +86,17 @@ packages=(
     neovim 
     fuse 
     sqlitebrowser 
+    # Astronvim 
+    fd
+    ripgrep
+    lazygit
+    gdu
+    bottom
+    # ASDF VM
+    openssl 
+    zlib 
+    xz 
+    tk
     # KDE
     dolphin
     ffmpegthumbs
@@ -141,6 +115,32 @@ packages=(
     gnome-keyring 
     polkit-gnome 
     xreader
+    # Hyprland
+    egl-wayland
+    hyprpaper
+    waybar
+    nwg-look # lx substitute
+    wl-clipboard
+    # TWM
+    awesome 
+    lxappearance 
+    qt5ct
+    qt6ct
+    nitrogen 
+    rofi 
+    xterm 
+    picom 
+    ranger 
+    pcmanfm # file manager
+    gvfs # dependence file manager
+    bashmount 
+    htop 
+    neofetch 
+    feh 
+    mupdf 
+    peazip-qt-bin # ark alternative yay
+    file-roller # gtk
+    transh-cli 
     # Fonts
     ttf-fira-code 
     ttf-hack-nerd 
