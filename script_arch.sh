@@ -4,7 +4,7 @@ set -e
 
 # Pacman packages
 packages=( 
-    # Tools
+    # ======== Tools ======== #
     firefox 
     chromium 
     tor 
@@ -27,7 +27,7 @@ packages=(
     yt-dlp # download videos youtube
     kolourpaint 
     nyx 
-    # System / Hardware
+    # ======== System / Hardware ======== #
     xf86-input-wacom 
     libwacom 
     kcm-wacomtablet 
@@ -47,7 +47,7 @@ packages=(
     linux-headers 
     flatpak 
     gufw 
-    # Games
+    # ======== Games ======== #
     nvidia 
     nvidia-settings 
     mesa-demos 
@@ -61,7 +61,7 @@ packages=(
     lutris 
     wine 
     winetricks 
-    # Dev
+    # ======== Dev ======== #
     base-devel 
     zsh 
     xclip 
@@ -86,18 +86,18 @@ packages=(
     neovim 
     fuse 
     sqlitebrowser 
-    # Astronvim 
+    # ======== Astronvim ======== #
     fd
     ripgrep
     lazygit
     gdu
     bottom
-    # ASDF VM
+    # ======== ASDF VM ======== #
     openssl 
     zlib 
     xz 
     tk
-    # KDE
+    # ======== KDE ======== #
     dolphin
     ffmpegthumbs
     kio-gdrive 
@@ -108,20 +108,20 @@ packages=(
     kcalc 
     gwenview
     skanlite 
-    # XFCE / GNOME
+    # ======== XFCE / GNOME ======== #
     lightdm-gtk-greeter-settings
     ffmpegthumbnailer
     gnome-themes-extra # to apply dark theme in legacy apps
     gnome-keyring 
     polkit-gnome 
     xreader
-    # Hyprland
+    # ======== Hyprland ======== #
     egl-wayland
     hyprpaper
     waybar
     nwg-look # lx substitute
     wl-clipboard
-    # TWM
+    # ======== TWM ======== #
     awesome 
     lxappearance 
     qt5ct
@@ -141,7 +141,7 @@ packages=(
     peazip-qt-bin # ark alternative yay
     file-roller # gtk
     transh-cli 
-    # Fonts
+    # ======== Fonts ======== #
     ttf-fira-code 
     ttf-hack-nerd 
     ttf-meslo-nerd 
@@ -154,29 +154,34 @@ packages=(
 
 # AUR packages
 packages_yay=( 
-    google-chrome 
-    visual-studio-code-bin 
-    hplip-plugin 
-    minecraft-launcher 
-    vkbasalt # https://github.com/crosire/reshade-shaders
+    # ======== Tools ======== #
+    google-chrome
     winff 
     bashmount 
     ventoy-bin 
-    ttf-ms-fonts 
-    powerline-fonts 
-    awesome-terminal-fonts 
-    # TWM
+    # ======== Dev ======== #
+    visual-studio-code-bin 
+    # ======== System ======== #
+    hplip-plugin 
+    # ======== Games ======== #
+    minecraft-launcher 
+    vkbasalt # https://github.com/crosire/reshade-shaders
+    # ======== TWM ======== #
     qt5-styleplugins 
     qt6gtk2
     selectdefaultapplication-git 
     rofi-power-menu 
-    # Hyprland
+    # ======== Hyprland ======== #
     tofi
+    # ======== Fonts ======== #
+    ttf-ms-fonts 
+    powerline-fonts 
+    awesome-terminal-fonts 
     )
 
 # Flatpak packages
 packages_flatpak=(
-    # Tools
+    # ======== Tools ======== #
     com.bitwarden.desktop
     org.mozilla.firefox
     com.github.tchx84.Flatseal
@@ -186,7 +191,7 @@ packages_flatpak=(
     org.qbittorrent.qBittorrent
     org.libreoffice.LibreOffice
     com.rustdesk.RustDesk
-    # Games
+    # ======== Games ======== #
     org.duckstation.DuckStation
     net.pcsx2.PCSX2
     org.ppsspp.PPSSPP
@@ -201,26 +206,26 @@ packages_flatpak=(
     net.lutris.Lutris
     net.davidotek.pupgui2
     com.github.Matoking.protontricks
-    # Art
+    # ======== Art ======== #
     com.obsproject.Studio
     org.kde.kdenlive
     org.gimp.GIMP
     org.kde.krita
     org.upscayl.Upscayl
     io.github.tntwise.REAL-Video-Enhancer
-    # Dev
+    # ======== Dev ======== #
     io.dbeaver.DBeaverCommunity
     io.podman_desktop.PodmanDesktop
     com.unity.UnityHub
-    # Study
+    # ======== Study ======== #
     md.obsidian.Obsidian
     net.ankiweb.Anki
     com.github.xournalpp.xournalpp
-    # XFCE / GNOME
+    # ======== XFCE / GNOME ======== #
     org.gnome.Calculator 
     org.gnome.Evince  
     org.gnome.SimpleScan
-    # KDE
+    # ======== KDE ======== #
     org.kde.kcalc
     org.kde.gwenview
     org.kde.okular
