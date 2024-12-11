@@ -15,160 +15,163 @@ packages=(
     zlib 
     xz 
     tk
-    #
-    kio-gdrive 
-    #
+    # Hyprland
     egl-wayland
     hyprpaper
     waybar
-    tofi # yay
     nwg-look # lx substitute
     wl-clipboard
-    #
+    # TWM
     awesome 
+    lxappearance 
+    qt5ct
+    qt6ct
+    nitrogen 
     rofi 
-    picom 
-    alacritty 
-    kitty 
     xterm 
+    picom 
     ranger 
     pcmanfm # file manager
-    gvfs # file manager
+    gvfs # dependence file manager
     bashmount 
     htop 
     neofetch 
     feh 
-    gwenview
     mupdf 
-    xreader # xfce
+    peazip-qt-bin # ark alternative yay
+    file-roller # gtk
     transh-cli 
-    vim 
-    neovim 
-    nvidia-settings 
-    gamemode 
-    lib32-gamemode 
-    lutris 
-    wine 
-    winetricks 
+    # System / Hardware
     xf86-input-wacom 
     libwacom 
     kcm-wacomtablet 
+    xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
     xorg-xinput 
-    lxappearance 
-    qt5ct # qt5 version
-    qt5-styleplugins # qt5 version
-    qt6ct # qt6 version
-    qt6gtk2  # qt6 version
-    nitrogen 
-    polkit-gnome 
-    ntfs-3g 
-    fuse 
+    xorg-xkill 
     blueman 
     bluez 
     bluez-utils 
     bluez-tools
-    hplip 
-    skanlite 
     alsa-utils 
     pavucontrol 
     lib32-pipewire 
-    flameshot 
+    ntfs-3g 
+    hplip 
+    acpid 
+    linux-headers 
+    flatpak 
+    gufw 
+    # Tools
     firefox 
     chromium 
+    tor 
+    torbrowser-launcher 
+    flameshot 
     piper 
     calibre 
     gnome-boxes 
     gparted 
     unrar 
-    acpid 
     xournalpp 
     libreoffice-still 
-    xorg-xkill 
+    gimp 
+    vlc 
+    smplayer 
+    qbittorrent 
+    obs-studio 
+    telegram-desktop 
+    leafpad 
+    yt-dlp # download videos youtube
+    kolourpaint 
+    nyx 
+    # Games
+    nvidia 
+    nvidia-settings 
+    mesa-demos 
+    vulkan-tools 
+    steam 
+    goverlay
+    mangohud
+    lib32-mangohud
+    gamemode 
+    lib32-gamemode 
+    lutris 
+    wine 
+    winetricks 
+    # Dev
+    base-devel 
+    zsh 
+    xclip 
+    dbeaver 
     nodejs 
     yarn 
     npm 
     pnpm
     rust 
+    go 
+    jdk-openjdk 
     docker 
     docker-compose 
     python-pip 
-    gimp 
-    vlc 
-    okular # pdf reader
-    smplayer 
-    breeze-gtk 
-    gufw 
-    kolourpaint 
-    qbittorrent 
-    adobe-source-han-sans-jp-fonts 
-    adobe-source-han-sans-kr-fonts 
-    adobe-source-han-sans-cn-fonts 
-    noto-fonts-emoji
-    ark # qt
-    peazip-qt-bin # ark alternative yay
-    file-roller # gtk
-    kcalc 
-    jdk-openjdk 
-    kdialog 
-    tor 
-    torbrowser-launcher 
-    nyx 
-    vulkan-tools 
-    mesa-demos 
+    dotnet-runtime 
+    dotnet-sdk 
+    aspnet-runtime 
     pycharm-community-edition 
+    alacritty 
+    kitty 
+    vim 
+    neovim 
+    fuse 
+    sqlitebrowser 
+    # KDE
+    dolphin
+    ffmpegthumbs
+    kio-gdrive 
+    ark
+    kdialog 
+    breeze-gtk 
+    okular
+    kcalc 
+    gwenview
+    skanlite 
+    # XFCE / GNOME
+    lightdm-gtk-greeter-settings
+    ffmpegthumbnailer
+    gnome-themes-extra # to apply dark theme in legacy apps
+    gnome-keyring 
+    polkit-gnome 
+    xreader
+    # Fonts
     ttf-fira-code 
     ttf-hack-nerd 
     ttf-meslo-nerd 
     ttf-jetbrains-mono-nerd 
-    gnome-keyring 
-    sqlitebrowser 
-    go 
-    leafpad 
-    linux-headers 
-    xclip 
-    dotnet-runtime 
-    dotnet-sdk 
-    aspnet-runtime 
-    dbeaver 
-    obs-studio 
-    telegram-desktop 
-    gnome-themes-extra # to apply dark theme in legacy apps
-    xf86-input-synaptics # touch pad, copy file in "cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/"
-    goverlay
-    mangohud
-    lib32-mangohud
-    dolphin
-    ffmpegthumbs # kde thumbnail in video archive
-    ffmpegthumbnailer
-    steam 
-    nvidia 
-    base-devel 
-    flatpak 
-    zsh 
-    lightdm-gtk-greeter-settings
-    yt-dlp # download videos youtube
+    adobe-source-han-sans-jp-fonts 
+    adobe-source-han-sans-kr-fonts 
+    adobe-source-han-sans-cn-fonts 
+    noto-fonts-emoji
     )
 
 # AUR packages
 packages_yay=( 
     google-chrome 
-    winff 
-    qt5-styleplugins 
-    hplip-plugin 
-    powerline-fonts 
-    awesome-terminal-fonts 
     visual-studio-code-bin 
-    rofi-power-menu 
-    asdf-vm 
-    upscayl-bin 
-    clang-format-all-git 
-    ttf-ms-fonts 
+    hplip-plugin 
     minecraft-launcher 
-    selectdefaultapplication-git 
     vkbasalt # https://github.com/crosire/reshade-shaders
+    winff 
     bashmount 
     ventoy-bin 
-    heroic-games-launcher-bin 
+    ttf-ms-fonts 
+    powerline-fonts 
+    awesome-terminal-fonts 
+    # TWM
+    qt5-styleplugins 
+    qt6gtk2
+    selectdefaultapplication-git 
+    rofi-power-menu 
+    # Hyprland
+    tofi
     )
 
 # Flatpak packages
