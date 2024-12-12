@@ -107,7 +107,8 @@ packages=(
     okular
     kcalc 
     gwenview
-    skanlite 
+    skanlite
+    spectacle # screenshot wayland
     # ======== XFCE / GNOME ======== #
     lightdm-gtk-greeter-settings
     ffmpegthumbnailer
