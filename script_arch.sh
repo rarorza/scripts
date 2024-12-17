@@ -259,6 +259,9 @@ yay -S ${packages_yay[@]}
 # Install flatpak packages
 flatpak install flathub ${packages_flatpak[@]} -y
 
+# Install cargo packages
+cargo install ${packages_cargo[@]}
+
 # AwesomeWM and general config files
 git clone https://github.com/rarorza/window_manager.git
 cd window_manager/
