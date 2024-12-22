@@ -64,6 +64,7 @@ packages=(
     # ======== Dev ======== #
     base-devel 
     zsh 
+    starship 
     xclip 
     dbeaver 
     nodejs 
