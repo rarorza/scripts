@@ -116,6 +116,7 @@ packages=(
     gnome-keyring 
     polkit-gnome 
     xreader
+    file-roller # unzip files gui
     # ======== Hyprland ======== #
     egl-wayland
     hyprpaper
