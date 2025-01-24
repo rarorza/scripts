@@ -28,6 +28,9 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Alt><Shif
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Alt>0']" &
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Alt><Shift>0']"
 
+# Disable animations from gnome
+gsettings set org.gnome.desktop.interface enable-animations false
+
 # nvim
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
