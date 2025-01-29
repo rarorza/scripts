@@ -239,6 +239,7 @@ packages_flatpak=(
 
 packages_cargo=( 
     tree-sitter-cli
+    hyprsome # awesome wm workspaces in hyperland
     )
 
 # Install pacman packages
