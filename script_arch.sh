@@ -238,7 +238,9 @@ packages_flatpak=(
     )
 
 packages_cargo=( 
+     # ======== Dev ======== #
     tree-sitter-cli
+     # ======== Hyprland ======== #
     hyprsome # awesome wm workspaces in hyperland
     )
 
