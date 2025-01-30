@@ -176,6 +176,7 @@ packages_yay=(
     rofi-power-menu 
     # ======== Hyprland ======== #
     tofi
+    waypaper
     # ======== Fonts ======== #
     ttf-ms-fonts 
     powerline-fonts 
