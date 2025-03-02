@@ -47,6 +47,16 @@ packages=(
     linux-headers 
     flatpak 
     gufw 
+    # ======== AMD ======== #
+    vulkan-radeon
+    libva-mesa-driver 
+    vulkan-icd-loader 
+    lib32-mesa 
+    lib32-vulkan-radeon 
+    lib32-vulkan-icd-loader 
+    lib32-libva-mesa-driver 
+    mesa-demos
+    amd-ucode
     # ======== Games ======== #
     nvidia 
     nvidia-settings 
