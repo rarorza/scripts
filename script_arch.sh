@@ -56,12 +56,12 @@ packages=(
     lib32-vulkan-icd-loader 
     lib32-libva-mesa-driver 
     mesa-demos
-    amd-ucode
-    # ======== Games ======== #
+    amd-ucode    
+    vulkan-tools 
+    # ======== NVDIA ======== #
     nvidia 
     nvidia-settings 
-    mesa-demos 
-    vulkan-tools 
+    # ======== GAMES ======== #
     steam 
     goverlay
     mangohud
@@ -71,6 +71,8 @@ packages=(
     lutris 
     wine 
     winetricks 
+    vkd3d 
+    lib32-vkd3d 
     # ======== Dev ======== #
     base-devel 
     zsh 
