@@ -28,6 +28,7 @@ packages=(
     kolourpaint 
     nyx 
     # ======== System / Hardware ======== #
+    man-db 
     xf86-input-wacom 
     libwacom 
     kcm-wacomtablet 
