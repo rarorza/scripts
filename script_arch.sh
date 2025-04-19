@@ -27,6 +27,8 @@ packages=(
     yt-dlp # download videos youtube
     kolourpaint 
     nyx 
+    # ======== BTRFS ======== #
+    snapper
     # ======== System / Hardware ======== #
     man-db 
     xf86-input-wacom 
@@ -84,7 +86,8 @@ packages=(
     yarn 
     npm 
     pnpm
-    rust 
+    rust
+    cargo 
     go 
     jdk-openjdk 
     docker 
@@ -194,6 +197,8 @@ packages_yay=(
     ttf-ms-fonts 
     powerline-fonts 
     awesome-terminal-fonts 
+    # ======== BTRFS ======== #
+    btrfs-assistant
     )
 
 # Flatpak packages
