@@ -169,6 +169,7 @@ packages=(
     adobe-source-han-sans-kr-fonts 
     adobe-source-han-sans-cn-fonts 
     noto-fonts-emoji
+    ttf-liberation
     )
 
 # AUR packages
