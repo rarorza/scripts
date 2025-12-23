@@ -29,6 +29,7 @@ packages=(
     nyx 
     # ======== BTRFS ======== #
     snapper
+    snap-pac
     # ======== System / Hardware ======== #
     man-db 
     xf86-input-wacom 
@@ -200,6 +201,7 @@ packages_yay=(
     awesome-terminal-fonts 
     # ======== BTRFS ======== #
     btrfs-assistant
+    limine-snapper-sync
     )
 
 # Flatpak packages
