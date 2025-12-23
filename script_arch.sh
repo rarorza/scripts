@@ -202,6 +202,7 @@ packages_yay=(
     # ======== BTRFS ======== #
     btrfs-assistant
     limine-snapper-sync
+    limine-mkinitcpio-hook
     )
 
 # Flatpak packages
