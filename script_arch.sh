@@ -350,5 +350,8 @@ sudo usermod -aG docker $USER
 # Install fonts
 fc-cache -vf
 
+# Mise activation zsh
+echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+
 # Install addons for ZSH
 chsh -s /usr/bin/zsh
