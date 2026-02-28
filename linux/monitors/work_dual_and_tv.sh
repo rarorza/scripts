@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MAIN="HDMI-A-1"
-DISABLED_1="DP-1"
-DISABLED_2="DP-2"
+MAIN="DP-2"
+SECOND="DP-1"
+TV="HDMI-A-1"
 
 get_outputs() {
   kscreen-doctor -o | awk '/Output:/ {print $3}'
@@ -15,7 +15,7 @@ exists() {
 
 missing=false
 
-for m in "$MAIN" "$DISABLED_1" "$DISABLED_2"; do
+for m in "$MAIN" "$SECOND" "$TV"; do
   if ! exists "$m"; then
     echo "Monitor '$m' not found"
     missing=true
@@ -34,6 +34,14 @@ kscreen-doctor \
   output.$MAIN.enable \
   output.$MAIN.mode.3840x2160@60 \
   output.$MAIN.primary \
-  output.$MAIN.scale.1.7 \
-  output.$DISABLED_1.disable \
-  output.$DISABLED_2.disable
+  output.$MAIN.position.1920,0 \
+  \
+  output.$SECOND.enable \
+  output.$SECOND.mode.1920x1080@60 \
+  output.$SECOND.position.0,0 \
+  \
+  output.$TV.enable \
+  output.$TV.mode.3840x2160@60 \
+  output.$TV.position.5760,0 \
+  output.$TV.scale.1.7 \
+  \
