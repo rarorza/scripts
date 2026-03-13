@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MAIN="DP-2"
-SECOND="DP-1"
+MAIN="DP-1"
+SECOND="DP-2"
 DISABLED="HDMI-A-1"
 
 get_outputs() {
@@ -33,6 +33,7 @@ fi
 kscreen-doctor \
   output.$MAIN.enable \
   output.$MAIN.mode.3840x2160@60 \
+  output.$MAIN.scale.1.0 \
   output.$MAIN.primary \
   output.$MAIN.position.1920,0 \
   \
