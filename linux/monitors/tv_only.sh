@@ -35,5 +35,9 @@ kscreen-doctor \
   output.$MAIN.mode.3840x2160@60 \
   output.$MAIN.primary \
   output.$MAIN.scale.1.7 \
+  output.$MAIN.hdr.enable \
+  output.$MAIN.brightness.100 \
+  \
   output.$DISABLED_1.disable \
+  \
   output.$DISABLED_2.disable

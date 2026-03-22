@@ -36,12 +36,16 @@ kscreen-doctor \
   output.$MAIN.scale.1.0 \
   output.$MAIN.primary \
   output.$MAIN.position.1920,0 \
+  output.$MAIN.brightness.100 \
   \
   output.$SECOND.enable \
   output.$SECOND.mode.1920x1080@60 \
   output.$SECOND.position.0,0 \
+  output.$SECOND.brightness.100 \
   \
   output.$TV.enable \
   output.$TV.mode.3840x2160@60 \
   output.$TV.position.5760,0 \
-  output.$TV.scale.1.7
+  output.$TV.scale.1.7 \
+  output.$TV.hdr.enable \
+  output.$TV.brightness.100

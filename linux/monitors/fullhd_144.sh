@@ -34,5 +34,8 @@ kscreen-doctor \
   output.$MAIN.enable \
   output.$MAIN.mode.1920x1080@144 \
   output.$MAIN.primary \
+  output.$MAIN.brightness.100 \
+  \
   output.$DISABLED_1.disable \
+  \
   output.$DISABLED_2.disable
